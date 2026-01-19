@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: HEALTHFLOW_DWH          
+    schema: STAGING                  
+    tables:
+      - name: STG_PATIENTS
+        description: "Données brutes des patients depuis PostgreSQL/S3"
+      - name: STG_ADMISSIONS
+        description: "Données brutes des admissions"
+      - name: STG_SERVICES
+        description: "Référentiel des services hospitaliers"
+      - name: STG_STOCKS_MEDICAMENTS
+        description: "Gestion des stocks de médicaments"
